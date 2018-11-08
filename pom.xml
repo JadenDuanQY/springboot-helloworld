@@ -60,12 +60,32 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <distributionManagement>
-        <!--自己创建的库-->
-       <repository>
-            <id>Jaden-test</id><!--这里的id与角色中配置的id要一致-->
-            <name>Jaden-test</name>
-            <url>http://nexus-jaden-test.qyos.novalocal/nexus/content/repositories/Jaden-test</url>
-        </repository>
-    </distributionManagement>
+    <repositories>
+      <!-- 配置nexus远程仓库 -->
+      <repository>
+         <id>Jaden-test</id>
+         <name>Jaden-test</name>
+         <url>http://nexus-jaden-test.qyos.novalocal/nexus/content/repositories/Jaden-test</url>
+         <releases>
+            <enabled>true</enabled>
+         </releases>
+         <snapshots>
+           <enabled>false</enabled>
+         </snapshots>
+      </repository>
+   </repositories>
+   <!-- 配置从哪个仓库中下载构件，即jar包 -->
+   <pluginRepositories>
+       <pluginRepository>
+         <id>Jaden-test</id>
+         <name>Jaden-test</name>
+         <url>http://nexus-jaden-test.qyos.novalocal/nexus/content/repositories/Jaden-test</url>
+         <releases>
+           <enabled>true</enabled>
+         </releases>
+         <snapshots>
+           <enabled>false</enabled>
+         </snapshots>
+      </pluginRepository>
+    </pluginRepositories>
 </project>
