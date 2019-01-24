@@ -60,7 +60,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <repositories>
+<!--     <repositories>
       <repository>
          <id>Jaden-test</id>
          <name>Jaden-test</name>
@@ -85,5 +85,5 @@
            <enabled>false</enabled>
          </snapshots>
       </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories> -->
 </project>
