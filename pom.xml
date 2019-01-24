@@ -61,7 +61,6 @@
         </dependency>
     </dependencies>
     <repositories>
-      <!-- 配置nexus远程仓库 -->
       <repository>
          <id>Jaden-test</id>
          <name>Jaden-test</name>
@@ -74,7 +73,6 @@
          </snapshots>
       </repository>
    </repositories>
-   <!-- 配置从哪个仓库中下载构件，即jar包 -->
    <pluginRepositories>
        <pluginRepository>
          <id>Jaden-test</id>
